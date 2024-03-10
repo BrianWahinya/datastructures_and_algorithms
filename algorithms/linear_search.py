@@ -8,14 +8,15 @@ print('''
 Time complexity is 0(n)
 ''')
 
-items = generate_unordered_integers(1, 20)
-target_item = 7
-print(items)
-
 def linear_search(array, target):
     for i, item in enumerate(array):
         if item == target:
             return i
     return None
 
-print(f"\n{target_item} position is:\n{linear_search(items, target_item)}\n")
+if __name__ == "__main__":
+    items = generate_unordered_integers(1, 20)
+    target_item = 7
+    
+    print(items)
+    print(f"\n{target_item} position is:\n{linear_search(items, target_item)}\n")
