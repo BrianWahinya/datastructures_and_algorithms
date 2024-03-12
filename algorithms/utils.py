@@ -15,3 +15,6 @@ def generate_unordered_integers(start, end):
 
 def generate_ordered_integers(start, end):
     return list(range(start, end + 1))
+
+def generate_random_integers(start, end, length):
+    return [random.randint(start, end) for _ in range(length)]

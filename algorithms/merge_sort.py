@@ -1,4 +1,4 @@
-from utils import generate_unordered_integers, clear_cmd
+from utils import generate_unordered_integers, generate_random_integers, clear_cmd
 
 clear_cmd()
 
@@ -40,7 +40,7 @@ def merge(left, right):
 
 
 if __name__ == "__main__":
-    array = generate_unordered_integers(52, 89)
+    array = generate_random_integers(0, 1000, 15)
     sorted_array = merge_sort(array)
     print(array, '\n')
     print(sorted_array)
