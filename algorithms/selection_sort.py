@@ -8,7 +8,8 @@ print('''
 1. Find the minimum
 2. Swap or append to an array/list
 Swapping creates unstable sort
-Time complexity is 0(n2)
+Time complexity: worst case - O(n2), best case - O(n)
+Space complexity: stable - O(n) or O(1), unstable - O(1)
 ''')
 
 def selection_sort(main_list, order = "desc"):
