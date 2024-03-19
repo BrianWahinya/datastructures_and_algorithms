@@ -1,4 +1,4 @@
-from utils import generate_unordered_integers, generate_random_integers, clear_cmd
+from utils import generate_random_integers, clear_cmd
 
 clear_cmd()
 
@@ -37,7 +37,6 @@ def merge(left, right):
     merged.extend(right[idx_right:])
 
     return merged
-
 
 if __name__ == "__main__":
     array = generate_random_integers(0, 1000, 15)
